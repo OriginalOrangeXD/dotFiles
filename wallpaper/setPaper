@@ -1,0 +1,12 @@
+#!/bin/bash
+wallpaperDir="$HOME/wallpaper/"
+
+files="$wallpaperDir"*
+
+
+select file in ${files:23};
+do
+    printf "setting the wallpaper to %s\n" $file
+    command feh --bg-scale ~/wallpaper/$file ~/wallpaper/eren-yeager-attack-on-titan_1080x1920.jpg
+    exit
+done
