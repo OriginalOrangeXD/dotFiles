@@ -1,8 +1,8 @@
 #!/bin/bash
-wallpaperDir="$HOME/wallpaper/"
 
-files="$wallpaperDir"*
-
+wallpaperdir="$HOME/wallpaper"
+cd $wallpaperdir
+files=("$wallpaperdir/*")
 
 select file in ${files:23};
 do
