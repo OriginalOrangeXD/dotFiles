@@ -1,0 +1,23 @@
+vim.api.nvim_set_option('expandtab', true)
+vim.api.nvim_set_option('smartindent', true)
+vim.api.nvim_set_option('nowrap', true)
+vim.api.nvim_set_option('relativenumber', true)
+vim.api.nvim_set_option('nu', true)
+vim.api.nvim_set_option('nohlsearch', true)
+vim.api.nvim_set_option('hidden', true)
+vim.api.nvim_set_option('noerrorbells', true)
+vim.api.nvim_set_option('noswapfile', true)
+vim.api.nvim_set_option('nobackup', true)
+vim.api.nvim_set_option('undofile', true)
+vim.api.nvim_set_option('incsearch', true)
+
+vim.api.nvim_set_option('tabstop', 4)
+vim.api.nvim_set_option('softtabstop', 4)
+vim.api.nvim_set_option('shiftwidth', 4)
+vim.api.nvim_set_option('scrolloff', 8)
+vim.api.nvim_set_option('colorcolumn', 80)
+
+vim.api.nvim_set_option('gcr', '')
+vim.api.nvim_set_option('undodir', '~/undodir')
+vim.api.nvim_set_option('signcolumn', 'yes')
+

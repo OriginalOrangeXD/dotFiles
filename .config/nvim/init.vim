@@ -1,25 +1,6 @@
 syntax on
 
-
-set guicursor=
-set tabstop=4 softtabstop=4
-set shiftwidth=4
-set expandtab
-set smartindent
-set nowrap
-set relativenumber
-set nu
-set nohlsearch
-set hidden
-set noerrorbells
-set noswapfile
-set nobackup
-set undodir=~/.undodir
-set undofile
-set incsearch
-set scrolloff=8
-set signcolumn=yes
-set colorcolumn=80
+lua require('lua.set')
 
 call plug#begin('/home/robert/.config/nvim/')
 Plug 'nvim-lua/popup.nvim'
@@ -84,8 +65,9 @@ nnoremap <C-n> :lua require("harpoon.ui").nav_file(3)<CR>
 nnoremap <C-s> :lua require("harpoon.ui").nav_file(5)<CR>
 nnoremap <leader>tu :lua require("harpoon.term").gotoTerminal(1)<CR>
 nnoremap <leader>te :lua require("harpoon.term").gotoTerminal(2)<CR>
-"lua stuff
-luafile ~/.config/nvim/lua/init.lua
+" lua stuff
+" luafile ~/.config/nvim/lua/lsp.lua
+lua require('lua.lsp')
 command! Scratch lua require'tools'.makeScratch()
 
 
