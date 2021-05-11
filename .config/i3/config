@@ -180,13 +180,10 @@ bindsym $mod+Shift+q kill
 bindsym Print exec screenshot
 bindsym $mod+d exec rofi -show run
 
-# startup
-exec --no-startup-id spotify
-exec --no-startup-id skype
 
 # Keys
 exec_always xmodmap -e "clear lock" #disable caps lock switch
 exec_always xmodmap -e "keysym Caps_Lock = Escape" #set caps_lock as escape
 
-exec --no-startup-id picom -f
+exec_always --no-startup-id picom -f
 exec_always export PATH=/home/robert/appimage/:$PATH

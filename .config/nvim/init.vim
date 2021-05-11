@@ -1,6 +1,6 @@
 syntax on
 
-lua require('lua.set')
+lua require('set')
 
 call plug#begin('/home/robert/.config/nvim/')
 Plug 'nvim-lua/popup.nvim'
@@ -24,6 +24,7 @@ Plug 'ayu-theme/ayu-vim'
 Plug 'sainnhe/sonokai'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'nvim-treesitter/playground'
+Plug '~/newLanguages/lua/typeSpeed'
 call plug#end()
 
 
@@ -67,7 +68,7 @@ nnoremap <leader>tu :lua require("harpoon.term").gotoTerminal(1)<CR>
 nnoremap <leader>te :lua require("harpoon.term").gotoTerminal(2)<CR>
 " lua stuff
 " luafile ~/.config/nvim/lua/lsp.lua
-lua require('lua.lsp')
+lua require('lsp')
 command! Scratch lua require'tools'.makeScratch()
 
 
